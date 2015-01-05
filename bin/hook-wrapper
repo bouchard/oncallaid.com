@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# http://dduvnjak.pw/adding-pre-commit-tests-with-git/
+
+if [ -x $0.local ]; then  
+    $0.local "$@" || exit $?
+fi
+
+echo "Running hook wrapper."  
+echo $0
+
+if [ -x hooks/$(basename $0) ]; then  
+    hooks/$(basename $0) "$@" || exit $?
+fi  

@@ -1,0 +1,54 @@
+<article>
+	<div class="action-links">
+		<% if can?(:update, @article) %>
+		<%= link_to('edit', edit_article_path(@article), :class => 'action-link button') %>
+		<% else %>
+		<%= link_to_edit_submission(@user_submission_scope) %>
+		<% end %>
+	</div>
+	<header><%= @article.title %></header>
+	<% a = markdown(@article.body) %>
+	<% if a.length > 1 %>
+		<%= a %>
+	<% else %>
+		<p>
+			Help your colleagues out and <%= link_to('start', edit_article_path(@article)) %> this article off!
+		</p>
+	<% end %>
+	<% contributions = @article.contribution_counts %>
+	<% if contributions.length > 0 %>
+	<div class="show-contributors"><%= pluralize(contributions.length, 'contribution') %> to this article by <%= pluralize(contributions.map{ |c| c.user }.uniq.length, 'user') %> &#9660;</div>
+	<ul class="contributors" style="display: none;">
+	<% contributions.each do |c| %>
+		<li>
+			<% if c.user.profile %>
+				<%= image_tag(c.user.gravatar_url(:size => 60), :width => 30, :height => 30) %><span class="title"><%= c.user.profile.title %> </span><span class="name"><%= c.user.profile.name %></span> <span class="postnominals"><%= c.user.profile.postnominals %></span>
+				<div class="contributions">
+					Contributions to this article: <span class="word-total"><%= c.word_count %></span> words
+				</div>
+			<% else %>
+				<%= image_tag(c.user.gravatar_url(:size => 60), :width => 30, :height => 30) %><span class="name"><%= c.user.username %></span>
+				<div class="contributions">
+					Contributions to this article: <span class="word-total"><%= c.word_count %></span> words
+				</div>
+			<% end %>
+		</li>
+	<% end %>
+	</ul>
+	<% end %>
+	<div class="ios-ad">
+		Get it on your iPhone or iPad.
+	</div>
+	<script type="text/javascript">
+	OCA.queue.wait(function() {
+		$(function() {
+			$('.ios-ad').click(function() {
+				location.href = '<%= ios_path %>';
+			});
+			$('.show-contributors').click(function() {
+				$('.contributors').toggle();
+			});
+		})
+	});
+	</script>
+</article>

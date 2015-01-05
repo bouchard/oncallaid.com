@@ -1,0 +1,26 @@
+@import 'partials/mixins';
+
+article.feedback {
+	form {
+		input[type=text], textarea {
+			font-size: 1em;
+			@include regular-font;
+			border: 1px solid #aaa;
+			@include box-sizing(border-box);
+			width: 100%;
+			font-size: 1em;
+			padding: 8px 10px 5px 10px;
+			&:focus {
+				outline: none;
+				background: #fafafa;
+				border: 1px solid $highlight;
+			}
+		}
+		textarea {
+			height: 200px;
+		}
+		input[type=submit] {
+			display: block;
+		}
+	}
+}

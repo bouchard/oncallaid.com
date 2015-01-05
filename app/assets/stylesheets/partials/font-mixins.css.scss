@@ -1,0 +1,34 @@
+@mixin title-font() {
+	font-family: 'LeagueGothicRegular', 'AdelleWebBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin regular-font() {
+	font-family: 'AdelleWebRegular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin heavy-font() {
+	font-family: 'AdelleWebBold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin italic-font() {
+	font-family: 'AdelleWebItalic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@mixin heavy-italic-font() {
+	font-family: 'AdelleWebBoldItalic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}

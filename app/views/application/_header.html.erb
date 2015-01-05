@@ -1,0 +1,31 @@
+<div id="header-container">
+	<div id="header">
+		<h1><%= link_to(provide(:page_title), root_path) %></h1>
+
+		<% if current_user.persisted? %>
+
+		<div class="rep-tag-header">
+			<%= render :partial => 'rep_tag', :locals => { :user => current_user } %>
+			<div class="buttons">
+				<%= link_to('Sign out', destroy_session_path, :method => :delete) %>
+			</div>
+		</div>
+
+		<% else %>
+
+		<div class="public-links">
+			<%= link_to('Sign up', new_registration_path) %> |
+			<%= link_to('Sign in', new_session_path, :class => 'green') %>
+		</div>
+
+		<% end %>
+
+		<div class="twi-logo">
+			<%= link_to('the well inspired ventures, inc.', 'http://thewellinspired.com') %>
+		</div>
+	</div>
+</div>
+
+<div id="sub-header">
+	<h1>A collaborative &amp; concise on call reference for senior medical students and junior doctors.</h1>
+</div>

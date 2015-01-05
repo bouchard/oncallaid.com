@@ -1,0 +1,45 @@
+<% url = OnCallAid::Application.routes.url_helpers %>
+
+$ ->
+
+	window.OCA ||= {}
+
+	$('a[rel*=facebox]').facebox()
+
+	$('.markdown-explanation').click ->
+		$.facebox($('.markdown-box').html())
+
+	OCA._alert = (text, t, options) ->
+		if typeof text == 'string' && text.length > 0
+			$('.growl').remove()
+			el = $('<div>').addClass('growl').append($('<div>').html(text));
+			el.addClass('alert') if (t == 'a')
+			el.addClass('notice') if (t == 'n')
+			l = text.length * 54
+			l = 3000 if (l < 3000)
+			l = 10000 if (l > 10000)
+			if options && options.fadeIn
+				el.css({ display: 'none' })
+			if options && options.sticky
+				el.appendTo($('body')).fadeIn()
+			else
+				el.appendTo($('body')).fadeIn().delay(l).fadeOut()
+
+
+	OCA.alert = (text, options) ->
+		this._alert(text, 'a', options)
+
+	OCA.notice = (text, options) ->
+		this._alert(text, 'n', options)
+
+
+	$('.has-tipsy').tipsy
+		title : ->
+			$(this).data('tipsy-text')
+		trigger : 'hover'
+		html : true
+		gravity : $.fn.tipsy.autoWE
+		fade : true
+		opacity : 1
+		delayIn : 0
+		delayOut : 0

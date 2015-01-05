@@ -1,0 +1,9 @@
+<article class="feedback">
+	<header>Let Us Know What You Think</header>
+	<p>Please use the form below to let us know if you have any comments, corrections, questions, or suggestions &mdash; we'd love to hear from you, and we'll endeavour to get back to you as soon as possible.</p>
+	<%= form_tag(feedback_path, :method => :post) do %>
+		<%= hidden_field_tag(:user, current_user.id) if current_user.persisted? %>
+		<%= text_area_tag(:body) %>
+		<%= submit_tag('Send') %>
+	<% end %>
+</article>

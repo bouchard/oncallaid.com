@@ -1,0 +1,16 @@
+.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/*
+vendor/cache/
+app/assets/uploads/
+public/questions/
+public/stylesheets/
+public/javascripts/
+db/sphinx/
+.sass-cache/
+public/assets/
+public/uploads/
+coverage/
+public/cache/

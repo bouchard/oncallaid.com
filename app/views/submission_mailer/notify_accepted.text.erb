@@ -1,0 +1,10 @@
+Hi <%= @submission.user.username %>,
+
+We just wanted to let you know that your contribution to the article "<%= @submission.article.title %>" has been accepted on OnCallAid. You can view your contribution live at:
+
+<%= slug_url(:chapter_slug => @submission.article.chapter.slug, :slug => @submission.article.slug) %>
+
+We greatly appreciate your participation on OnCallAid, and we look forward to having you contribute again soon!
+
+Kind Regards,
+The OnCallAid Team

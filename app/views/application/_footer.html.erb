@@ -1,0 +1,25 @@
+<div id="footer-container">
+	<div id="footer">
+		<div class="row">
+			<div class="cell left">
+				<%= link_to('Give Us Feedback!', feedback_path) if can?(:send, :feedback) %>
+				<%= link_to('Contributors', contributors_path) %>
+				<%= link_to('Disclaimer', disclaimer_path, :rel => 'facebox') %>
+			</div>
+			<div class="cell">
+				<h2>The Inspired Network</h2>
+				OnCallAid
+			</div>
+			<div class="cell">
+				<h2>The Instigators</h2>
+				<div class="instigators">
+					site design &amp; logo &copy; <%= Time.now.year %> <%= link_to('The Well Inspired Ventures, Inc.', 'http://thewellinspired.com')%><br>
+					user contributions licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a> with <%= link_to('attribution required', attribution_path) %>.
+					<br>
+					Get OnCallAid <%= link_to('On your iPhone or iPad', ios_path) %>.<br>
+					<%= link_to('A Production of The Well Inspired Ventures, Inc.', 'http://thewellinspired.com/', :class => 'logo') %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<% font_size ||= false %>
+<%= content_tag(:div, :class => 'rep-tag', :style => (font_size ? "font-size: #{font_size.to_s}px;" : "")) do %>
+    <%= image_tag(user.gravatar_url(:size => 44), :class => 'pic', :width => 22, :height => 22) %>
+    <div class="name">
+        <%= link_to(user.username, profile_url(:id => user.authorizations.first.uid)) %>
+    </div>
+    <div class="rep">
+        <%= user.contribution_counts(:word) %>
+    </div>
+    <% unless current_user.role == DEFAULT_ROLE %>
+        <%= content_tag(:div, :class => [current_user.role, 'badge'].join(' ')) do %>
+            <%= current_user.role %>
+        <% end %>
+    <% end %>
+<% end %>

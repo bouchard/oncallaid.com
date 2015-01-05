@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'AdelleWebBold';
+	src: font-url('adelle-bold-700-webfont.eot');
+	src: font-url('adelle-bold-700-webfont.eot?#iefix') format('embedded-opentype'),
+		 font-url('adelle-bold-700-webfont.woff') format('woff'),
+		 font-url('adelle-bold-700-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'AdelleWebBoldItalic';
+	src: font-url('adelle-bold-italic-700-webfont.eot');
+	src: font-url('adelle-bold-italic-700-webfont.eot?#iefix') format('embedded-opentype'),
+		 font-url('adelle-bold-italic-700-webfont.woff') format('woff'),
+		 font-url('adelle-bold-italic-700-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'AdelleWebItalic';
+	src: font-url('adelle-italic-400-webfont.eot');
+	src: font-url('adelle-italic-400-webfont.eot?#iefix') format('embedded-opentype'),
+		 font-url('adelle-italic-400-webfont.woff') format('woff'),
+		 font-url('adelle-italic-400-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'AdelleWebRegular';
+	src: font-url('adelle-regular-400-webfont.eot');
+	src: font-url('adelle-regular-400-webfont.eot?#iefix') format('embedded-opentype'),
+		 font-url('adelle-regular-400-webfont.woff') format('woff'),
+		 font-url('adelle-regular-400-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'LeagueGothicRegular';
+	src: font-url('league_gothic.eot');
+	src: font-url('league_gothic.eot?#iefix') format('embedded-opentype'),
+		 font-url('league_gothic.woff') format('woff'),
+		 font-url('league_gothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+/* Font Awesome, customized. */
+
+@font-face {
+	font-family: 'TWIFontAwesomeRegular';
+	src: font-url('twi-webfont.eot');
+	src: font-url('twi-webfont.eot?#iefix') format('embedded-opentype'),
+		 font-url('twi-webfont.woff') format('woff'),
+		 font-url('twi-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: TWIFontAwesomeRegular;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"], [class^="icon-arrow"], [class*=" icon-arrow"] {
+  /* keeps button heights with and without icons the same */
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-star:before { content: "\f005"; }
+.icon-checkmark:before { content: "\f00c"; }
+.icon-x:before { content: "\f00d"; }
+.icon-clock:before { content: "\f017"; }
+.icon-lock:before { content: "\f023"; }
+.icon-tag:before { content: "\f02b"; }
+.icon-tags:before { content: "\f02c"; }
+.icon-image:before { content: "\f03e"; }
+.icon-pencil:before { content: "\f040"; }
+.icon-map-marker:before { content: "\f041"; }
+.icon-pencil-with-paper:before { content: "\f044"; }
+.icon-external-link:before { content: "\f045"; }
+.icon-left:before { content: "\f053"; }
+.icon-right:before { content: "\f054"; }
+.icon-arrow-left:before { content: "\f060"; }
+.icon-arrow-right:before { content: "\f061"; }
+.icon-arrow-up:before { content: "\f062"; }
+.icon-arrow-down:before { content: "\f063"; }
+.icon-caret-up:before { content: "\f077"; }
+.icon-caret-down:before { content: "\f078"; }
+.icon-facebook:before { content: "\f082"; }
+.icon-up-hat:before { content: "\f095"; }
+.icon-down-hat:before { content: "\f096"; }
+.icon-markdown-solid:before { content: "\f097"; }
+.icon-markdown:before { content: "\f098"; }

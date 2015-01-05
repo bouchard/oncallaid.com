@@ -1,0 +1,10 @@
+Hi <%= @submission.user.username %>,
+
+Unfortunately, we found a problem or two with your edit to the article "<%= @submission.article.title %>" on OnCallAid. You can see why we rejected your edit for now at the following URL, and we're always happy to take your submission again once you've made a few changes.
+
+<%= edit_submission_url(@submission) %>
+
+We greatly appreciate your participation on OnCallAid, and we hope you don't find this email too discouraging! Active users like yourself are the only way a site like ours can survive and thrive.
+
+Kind Regards,
+The OnCallAid Team

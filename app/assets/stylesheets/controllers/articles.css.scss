@@ -1,0 +1,328 @@
+@import 'partials/mixins';
+
+$article-top-padding: 20px;
+
+.not-signed-in.articles.index article:first-of-type {
+	padding-top: $sub-header-height + $article-top-padding;
+}
+
+// .articles.index .edit:first-of-type {
+// 	padding-top: $sub-header-height / 2 + $article-top-padding;
+// }
+
+article, .edit.article, .new.submission, .moderate.submission {
+	position: relative;
+	padding: $article-top-padding 40px 30px 40px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	background: #fff;
+
+	&:first-of-type {
+		border-top: 0;
+		padding-top: $article-top-padding + 2px; // Extra 2 px because of #wrapper margin-top.
+	}
+
+	&:last-of-type {
+		@include border-bottom-left-radius(7px);
+		@include border-bottom-right-radius(7px);
+	}
+
+	&#toc {
+		.ios-ad {
+			padding: 15px 40px 10px 40px;
+			font-size: 1.6em;
+		}
+		table {
+			width: 100%;
+			margin: 0 0 1em 0;
+			th {
+				text-align: left;
+				font-size: 1.2em;
+
+				// @include title-font;
+				// text-transform: uppercase;
+				// font-size: 1.5em;
+			}
+			td {
+				width: 33.33333333%;
+				vertical-align: top;
+				a {
+					display: inline-block;
+					padding: 5px 10px 2px 10px;
+					@include border-radius(5px);
+					// text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+					// @include heavy-font;
+					font-size: 1.0em;
+					line-height: 1.4em;
+					&:hover, &:active {
+						@include background($highlight linear-gradient(darken($highlight, 5%), $highlight, lighten($highlight, 5%)));
+						@include box-shadow(inset 1px 1px 3px rgba(0,0,0,0.3));
+						color: #fff;
+					}
+					&.empty {
+						// color: hsl(hue($highlight), saturation($highlight), 80%);
+						color: lighten($highlight, 25%);
+					}
+				}
+			}
+		}
+	}
+
+	.ios-ad {
+		&:hover {
+			background: $highlight;
+			@include single-transition(background-color, 100ms, 100ms);
+		}
+		cursor: pointer;
+		@include single-transition(background-color, 100ms);
+		margin: 10px -40px -30px -40px;
+		padding: 10px 30px 5px 30px;
+		@include border-bottom-left-radius(7px);
+		@include border-bottom-right-radius(7px);
+		background: transparentize($highlight, 0.8);
+		@include title-font;
+		color: lighten($highlight, 45%);
+		text-transform: uppercase;
+		font-size: 1.3em;
+		text-align: right;
+		img {
+			display: inline-block;
+			margin-top: -5px;
+			margin-left: 10px;
+			width: 110px;
+			vertical-align: middle;
+		}
+	}
+
+	header {
+		font-size: 1.4em;
+		// With League Gothic.
+		@include title-font;
+		text-transform: uppercase;
+		font-size: 2.0em;
+		background: lighten($highlight, 0%);
+		//margin: -22px -40px 20px -40px;
+		margin: -.6875em -1.25em .5em -1.25em;
+		padding: .625em 1.25em .375em 1.25em;
+		//padding: 20px 40px 12px 40px;
+		color: #fff;
+		line-height: 1em;
+		// background: desaturate($highlight, 100%);
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 1em;
+		padding: 0.45em 0.45em 0.25em 0.45em;
+		line-height: 1.0em;
+		@include heavy-font;
+	}
+
+	h1 {
+		font-size: 1.0em;
+		// background: transparentize($highlight, 0.0);
+		// color: #fff;
+		margin-left: -0.5em;
+		margin-right: -0.5em;
+		margin-top: 2em;
+		background: transparentize($highlight, 0.1);
+		// background: transparentize(desaturate($highlight, 100%), 0.1);
+		color: #fff;
+		@include border-radius(0.3em);
+		&:first-of-type {
+			margin-top: 1em;
+		}
+	}
+
+	h2 {
+		font-size: 1.0em;
+		//border-bottom: 1px solid hsl(hue($highlight), saturation($highlight), 75%);
+		background: transparentize($highlight, 0.92);
+		// background: transparentize(desaturate($highlight, 100%), 0.92);
+		@include border-radius(0.3em);
+	}
+
+	h3, h4, h5, h6 {
+		font-size: 1.0em;
+		border-bottom: 1px solid hsl(hue($highlight), saturation($highlight), 92%);
+	}
+
+	ul {
+		margin: 0;
+		li {
+			line-height: 1.4em;
+		}
+	}
+
+	blockquote {
+		@include border-radius(0.3em);
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0.2em 1.42em 0 1.42em;
+		font-size: 0.9em;
+		line-height: 1.5em;
+		border: 1px solid $highlight;
+		background: hsl(hue($highlight), saturation($highlight), 98%);
+	}
+
+	.action-links {
+		position: absolute;
+		top: 16px;
+		right: 40px;
+		.action-link {
+			padding: 10px 10px 6px 10px;
+			display: inline-block;
+			font-size: 0.75em;
+			line-height: 1.0em;
+			border: 0;
+			@include heavy-font;
+			text-transform: uppercase;
+			@include border-radius(5px);
+			color: #666;
+			// @include background(transparentize($highlight, 0.8));
+			background: #fff;
+			@include box-shadow(1px 1px 1px rgba(0,0,0,0.1));
+			&:hover {
+				color: $highlight;
+			}
+			&:active {
+				color: $highlight;
+			}
+		}
+	}
+
+	.show-contributors {
+		margin-top: 20px;
+		padding-top: 10px;
+		border-top: 1px solid hsl(hue($highlight), saturation($highlight), 93%);
+		cursor: pointer;
+		font-size: 0.8em;
+		color: transparentize(#000, 0.3);
+	}
+
+	ul.contributors {
+		li {
+			font-size: 0.9em;
+			line-height: 1.2em;
+			color: transparentize(#000, 0.3);
+			img {
+				padding: 2px;
+				@include box-shadow(1px 1px 2px transparentize(#000, 0.6));
+				border: 0;
+				width: 30px;
+				height: 30px;
+			}
+			.postnominals {
+				display: none;
+			}
+		}
+	}
+}
+
+.articles.index .action-links {
+	top: 10 + $sub-header-height;
+}
+
+#contributors ul, article .contributors {
+	margin-top: 0.6em;
+	padding: 0;
+	li {
+		clear: left;
+		padding-bottom: 0.6em;
+		list-style-type: none;
+		@include border-radius(8px);
+		//cursor: pointer;
+		img {
+			float: left;
+			margin-right: 0.6em;
+			margin-bottom: 0.6em;
+			padding: 4px;
+			background: #fff;
+			@include box-shadow(1px 1px 3px transparentize(#000, 0.8));
+			width: 80px;
+			height: 80px;
+		}
+		.title {
+			color: #777;
+		}
+		.name, .postnominals, .title {
+			text-transform: uppercase;
+			@include heavy-font;
+		}
+		.postnominals {
+			display: inline-block;
+			margin-left: 1em;
+			color: transparentize($text, 0.6);
+			font-size: 0.7em;
+		}
+		.word-total, .line-total, .article-total {
+			color: $highlight;
+			@include heavy-font;
+		}
+		.contributions {
+			font-size: 0.9em;
+		}
+		.description {
+			margin-top: 0.1em;
+			padding-top: 0.2em;
+			border-top: 1px solid #999;
+			font-size: 0.9em;
+		}
+	}
+}
+
+#contributors ul {
+	margin-top: -5px;
+}
+
+#facebox {
+	article {
+		border: 0;
+		padding: 10px;
+		header {
+			font-size: 1.2em;
+			margin-bottom: 0.8em;
+		}
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.edit.article, .new.submission, .moderate.submission {
+	p {
+		margin: 0 0 10px 0;
+	}
+	label {
+		display: block;
+		font-size: 1em;
+		.markdown-explanation {
+			color: #999;
+			@include italic-font;
+			font-size: 0.9em;
+		}
+	}
+	input[type=text], textarea {
+		margin-bottom: 1em;
+		font-size: 1em;
+		@include regular-font;
+		border: 1px solid #aaa;
+		@include box-sizing(border-box);
+		width: 100%;
+		font-size: 1.5em;
+		padding: 8px 10px 5px 10px;
+		&:focus {
+			outline: none;
+			background: #fafafa;
+			border: 1px solid $highlight;
+		}
+	}
+	textarea {
+		height: 300px;
+		padding: 10px;
+		font-size: 1.0em;
+		font-family: Monospace;
+	}
+	input[type=submit] {
+		display: block;
+	}
+}

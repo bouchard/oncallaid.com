@@ -1,0 +1,24 @@
+<div class="moderate submission">
+
+	<header>Moderating: <%= @submission.article.title %></header>
+
+	<p>This submission was contributed by <strong><%= @submission.user.username %></strong> (<%= mail_to(@submission.user.email) %>) <%= time_ago_in_words(@submission.updated_at) %> ago.</p>
+
+	<%= form_for(@submission, :url => accept_submission_path(@submission)) do |f| %>
+
+		<label for="body"><span class="markdown-explanation">(you can use <span style="border-bottom: 1px dotted #666;">Markdown</span> for formatting)</span></label>
+		<%= f.text_area :body %>
+
+		<%= f.submit "Accept this submission" %>
+	<% end %>
+
+	<%= form_for(@submission, :url => reject_submission_path(@submission), :method => :delete) do |f| %>
+
+		<label for="rejected_reason">Reason why you're rejecting this submission:</label>
+		<%= f.text_area :rejected_reason, :rows => 5 %>
+
+		<%= f.submit "Reject this submission" %>
+	<% end %>
+
+	<%= render :partial => 'helpbox' %>
+</div>

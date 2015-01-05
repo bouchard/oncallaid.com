@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapters type="array">
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+    <id type="integer">1</id>
+    <slug>general-principles</slug>
+    <sort-order type="integer">1</sort-order>
+    <title>General Principles</title>
+    <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+    <articles type="array">
+      <article>
+        <body>Patients can be **hypovolemic**, **normovolemic**, or **hypervolemic**.
+
+# Quick Assessment
+
+* **Skin**
+    * Warm and pink OR cold, mottled and clammy?
+* **Mental Status**
+    * Alert and oriented OR confused/agitated?
+* **Urine output**
+    * &gt; 30ml/h (adequate) OR &lt; 30ml/h (oliguria)
+
+# Vital Signs
+
+* HR and BP (including orthostatic)
+    * &gt; 15mmHg drop in systolic from sitting to standing = orthostatic hypotension -&gt; may be volume depleted - *are they on beta blockers?*
+
+# Physical Examination Assessment
+
+* Moist mucous membranes?
+* Respiratory crackles?
+* JVP elevated?
+* S3 gallop (volume overload)
+* Hepatojugular reflux (volume overload or RHF)
+* Skin turgor
+* Peripheral edema (pedal or sacral)
+
+# Chart Review
+
+* How much fluid have they had? Check with nurse, the patient and the fluid balance chart.
+* Weight change?
+* Losses? GI (diarrhea, NG tube), Urinary (diuretics, DI), Skin (diaphoresis)</body>
+        <chapter-id type="integer">1</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">1</id>
+        <slug>assessing-volume-status</slug>
+        <sort-title>Assessing Volume Status</sort-title>
+        <title>Assessing Volume Status</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body>[**SPIKES**][spikes] Protocol for Delivering Bad News:
+
+* **S**: Set up the interview:
+    * Privacy
+    * Involve **significant others**
+    * Sit down
+    * Make a connection --- maintain eye contact.
+    * Make sure you won't be interrupted.
+* **P**: Assessing patient perceptions
+* **I**: Ask for an invitation to continue
+* **K**: Give knowledge and information to the patient
+* **E**: Address the patient's emotions with empathy
+* **S**: Strategy &amp; Summary
+    * Tell the patient **what's going to happen next**
+    * **Summarize** everything you've told the patient, and check for understanding
+
+[spikes]: http://theoncologist.alphamedpress.org/content/5/4/302.full "SPIKES - A Six-Step Protocol for Delivering Bad News: Application to the Patient with Cancer"</body>
+        <chapter-id type="integer">1</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">2</id>
+        <slug>breaking-bad-news</slug>
+        <sort-title>Breaking Bad News</sort-title>
+        <title>Breaking Bad News</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">1</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">3</id>
+        <slug>ethical-legal-issues</slug>
+        <sort-title>Ethical &amp; Legal Issues</sort-title>
+        <title>Ethical &amp; Legal Issues</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">1</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">4</id>
+        <slug>transporting-patients</slug>
+        <sort-title>Transporting Patients</sort-title>
+        <title>Transporting Patients</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+    <id type="integer">2</id>
+    <slug>emergency-calls</slug>
+    <sort-order type="integer">2</sort-order>
+    <title>Emergency Calls</title>
+    <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+    <articles type="array">
+      <article>
+        <body></body>
+        <chapter-id type="integer">2</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">5</id>
+        <slug>acute-neurological-deterioration</slug>
+        <sort-title>Acute Neurological Deterioration</sort-title>
+        <title>Acute Neurological Deterioration</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">2</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">6</id>
+        <slug>cardiac-arrest</slug>
+        <sort-title>Cardiac Arrest</sort-title>
+        <title>Cardiac Arrest</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body># Rapid Initial Assessment - **"DR ABCDEFG"**
+
+* **Danger**
+    * Check for danger, ensure patient and staff are safe
+* **Response**
+    * **COWS**
+        * "Can You Hear Me?"
+        * "Open Your Eyes"
+        * "What's Your Name?"
+        * "Squeeze My Hand"
+        * Sternal Rub
+* **Airway**
+    * Patency, obstruction
+    * Head tilt / chin lift / jaw thrust
+* **Breathing**
+    * Assess work of breathing
+        * Look for chest rise, end tidal CO&lt;sub&gt;2&lt;/sub&gt; if monitored
+    * If unresponsive and not breathing, then assume [[cardiac arrest]]!
+* **Don't Ever Forget Glucose!**
+    * Finger pinprick blood glucose
+
+# When to Call for Help
+
+* **Airway threatened**
+* Breathing
+    * **All respiratory arrests**
+    * **RR &lt;5 or &gt;36**
+* Circulation
+    * **All cardiac arrests**
+    * **HR &lt;40 or &gt;140**
+    * **BP &lt;90mmHg systolic**
+* Neurology
+    * Sudden change in consciousness: **&gt;=2 points on GCS**
+* **Any other patient you are worried about!**</body>
+        <chapter-id type="integer">2</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">7</id>
+        <slug>the-critically-ill-patient</slug>
+        <sort-title>Critically Ill Patient</sort-title>
+        <title>The Critically Ill Patient</title>
+        <updated-at type="datetime">2012-08-31T16:19:51Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">2</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">8</id>
+        <slug>respiratory-arrest</slug>
+        <sort-title>Respiratory Arrest</sort-title>
+        <title>Respiratory Arrest</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body>**Call for Help at Any Point If You're in Over Your Head!**
+
+# Rapid Initial Assessment - **"DR ABCDE"**
+
+* **Danger**
+    * Check for danger, ensure patient and staff are safe
+* **Response**
+    * Sternal Rub
+* **Airway**
+    * Patency, obstruction
+    * Head tilt / chin lift / jaw thrust
+* **Breathing**
+    * Assess work of breathing
+        * Look for chest rise, end tidal CO&lt;sub&gt;2&lt;/sub&gt; if monitored
+* **Circulation**
+    * Shock, arrhythmia
+        * Pulse
+* **Disability** (Neuro failure)
+* **Environment, Exposure, Endocrine** (Metabolic failure)
+    * Finger pinprick blood glucose
+    * Capillary blood gas
+    * Vitals including temperature
+
+# Initial Management
+
+* **Airway Failure**
+    * Open the airway, prevent aspiration (GCS &lt; 8, intubate!)
+* **Respiratory Failure**
+    * O&lt;sub&gt;2&lt;/sub&gt;, ventilatory support?
+* **Circulation Failure**
+    * Telemetry! - ECG, non-invasive BP, Pulse ox
+    * Obtain IV access
+    * Correct arrhythmias - cardioversion, pacing
+* **Neurological Failure**
+    * Treat seizures
+    * Look for causes of depressed consciousness
+    * Drugs
+* **Metabolic Failure**
+    * Correct electrolytes, blood sugar, temperature</body>
+        <chapter-id type="integer">2</chapter-id>
+        <created-at type="datetime">2012-08-31T15:38:40Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">55</id>
+        <slug>the-unresponsive-patient</slug>
+        <sort-title>Unresponsive Patient</sort-title>
+        <title>The Unresponsive Patient</title>
+        <updated-at type="datetime">2012-08-31T15:49:58Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+    <id type="integer">3</id>
+    <slug>common-calls-laboratory-issues</slug>
+    <sort-order type="integer">3</sort-order>
+    <title>Common Calls (Laboratory Issues)</title>
+    <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+    <articles type="array">
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">9</id>
+        <slug>acidosis</slug>
+        <sort-title>Acidosis</sort-title>
+        <title>Acidosis</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">10</id>
+        <slug>alkalosis</slug>
+        <sort-title>Alkalosis</sort-title>
+        <title>Alkalosis</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">11</id>
+        <slug>coagulation-disorders</slug>
+        <sort-title>Coagulation Disorders</sort-title>
+        <title>Coagulation Disorders</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body># Reference Range
+
+* 3.5 - 5.0 mEq/L
+
+# Causes
+
+* Hemolyzed blood sample (pseudohyperkalemia)
+* Tissue breakdown (rhabdomyolysis, tumour lysis syndrome)
+* **Overdose** (does the patient have an IV potassium infusion running?)
+
+# Treatment (if true hyperkalemia)
+
+* Cease potassium intake (IV or oral)
+* Insulin - 15U + 50ml of 50% Dextrose
+* Bicarbonate - 1 amp (50 mEq) over 15 minutes
+* Salbutamol (Ventolin) - by nebulizer</body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">12</id>
+        <slug>hyperkalemia</slug>
+        <sort-title>Hyperkalemia</sort-title>
+        <title>Hyperkalemia</title>
+        <updated-at type="datetime">2012-08-31T16:15:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">13</id>
+        <slug>hypernatremia</slug>
+        <sort-title>Hypernatremia</sort-title>
+        <title>Hypernatremia</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">14</id>
+        <slug>hypocalcemia</slug>
+        <sort-title>Hypocalcemia</sort-title>
+        <title>Hypocalcemia</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">3</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">15</id>
+        <slug>hypokalemia</slug>
+        <sort-title>Hypokalemia</sort-title>
+        <title>Hypokalemia</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+    <id type="integer">4</id>
+    <slug>common-calls-patient-issues</slug>
+    <sort-order type="integer">4</sort-order>
+    <title>Common Calls (Patient Issues)</title>
+    <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+    <articles type="array">
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">16</id>
+        <slug>abdominal-pain</slug>
+        <sort-title>Abdominal Pain</sort-title>
+        <title>Abdominal Pain</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">17</id>
+        <slug>altered-mental-status-decreased-gcs</slug>
+        <sort-title>Altered Mental Status (Decreased GCS)</sort-title>
+        <title>Altered Mental Status (Decreased GCS)</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">18</id>
+        <slug>cardiac-arrhythmias</slug>
+        <sort-title>Cardiac Arrhythmias</sort-title>
+        <title>Cardiac Arrhythmias</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body># Causes:
+* Hypovolemia
+    * Decreased intake of fluids
+    * Increased insensible loss of fluids (tachypnea, diaphoresis)
+    * Increased urine output (until hypovolemic, leading to decreased UO).
+    * Correct the hypovolemia with oral, nasogastric, or [[intravenous fluids|IV Fluid Administration]]</body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">19</id>
+        <slug>decreased-urine-output</slug>
+        <sort-title>Decreased Urine Output</sort-title>
+        <title>Decreased Urine Output</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">20</id>
+        <slug>fever</slug>
+        <sort-title>Fever</sort-title>
+        <title>Fever</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">21</id>
+        <slug>headache</slug>
+        <sort-title>Headache</sort-title>
+        <title>Headache</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">22</id>
+        <slug>hematuria</slug>
+        <sort-title>Hematuria</sort-title>
+        <title>Hematuria</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">23</id>
+        <slug>hemoptysis</slug>
+        <sort-title>Hemoptysis</sort-title>
+        <title>Hemoptysis</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">24</id>
+        <slug>hypertension</slug>
+        <sort-title>Hypertension</sort-title>
+        <title>Hypertension</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">25</id>
+        <slug>hypotension</slug>
+        <sort-title>Hypotension</sort-title>
+        <title>Hypotension</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body>First principles: provide **maintenance**, correct current **fluid deficit**, account for **ongoing losses**.
+
+# Fluid Resuscitation in Children
+
+**20ml/kg** NS bolus
+
+# Maintenance
+
+**4-2-1** rule for **maintenance fluids in children**:
+
+* 0-10kg: 4 mL/kg/hr
+* 10-20kg: add 2 mL/kg/hr
+* &gt;20kg: add 1 mL/kg/hr
+
+For **adults**, this works out to **(Weight(kg) + 40) ml/hr**
+
+# Exceptions
+
+* In **pyloric stenosis** in children, use **NS only**, as the lactate in CSL/Hartmann's/Ringer's is converted to bicarbonate and can worsen the alkalosis.</body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">26</id>
+        <slug>iv-fluid-administration</slug>
+        <sort-title>IV Fluid Administration</sort-title>
+        <title>IV Fluid Administration</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body># Pharmacological Treatment
+
+* Metoclopramide 10mg PO/IM/IV - SI: *dystonia*
+* Prochlorperazine 5-10mg PO or 12.5 mg IM - SI: *akathisia*</body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">27</id>
+        <slug>nausea-vomiting</slug>
+        <sort-title>Nausea &amp; Vomiting</sort-title>
+        <title>Nausea &amp; Vomiting</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body>&gt; Typically defined as &gt;1000ml of blood loss.
+*Does your centre have a PPH protocol?*
+
+1. Assess for signs of shock and resuscitate if necessary
+2. **Call for help!** --- you'll need at least two people
+3. Inform and reassure the patient:
+    * You're bleeding too much and we need to do something to stop it.
+4. Be prepared:
+    * insert a large-bore (16G) IV cannula if one isn't already in.
+    * take blood for **group and hold**, **CBC**, **coags** --- consider ordering blood products.
+    * consider activating your centre's **massive transfusion protocol**
+5. Control the bleeding:
+    * An assistant should **massage the fundus** while all other interventions are occurring.
+    * The four causes of PPH (4 H's, most likely first):
+        * **Tone**: Uterine atony
+            * *ask the midwife: prolonged second stage?*
+            * start or increase an oxytocin drip
+            * consider oxytocin (10IU IM)
+            * consider ergometrine / methylergometrine (CI: hypertension)
+            * fundal massage should already be happening
+        * **Tissue**: retained products
+            * *placenta delivered?*
+            * *placenta intact?*
+        * **Trauma**
+            * *ask the midwife about difficulty of labour/birth* --- presentations other than vertex associated with greater trauma to the birth canal
+            * *(if indicated) inspect for birth trauma*
+        * **Thrombosis**: DIC -&gt; loss of coagulation factors
+            * *are there still fresh clots?*
+            * coags you sent off will inform you further
+6. Monitor progress:
+    * insert an IDC
+        * titrate IV fluids to maintain 30ml/hr of urine output
+7. Definitive management:
+    * **consider examination under anesthesia in theatre if bleeding continues**
+    * a balloon catheter (*Bakri balloon*) can be placed intrauterine to temporarily stop hemorrhage
+        * a Foley catheter can work if you don't have access to a dedicated intrauterine catheter</body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">28</id>
+        <slug>post-partum-hemorrhage</slug>
+        <sort-title>Post-Partum Hemorrhage</sort-title>
+        <title>Post-Partum Hemorrhage</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">29</id>
+        <slug>seizures</slug>
+        <sort-title>Seizures</sort-title>
+        <title>Seizures</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">30</id>
+        <slug>shortness-of-breath</slug>
+        <sort-title>Shortness of Breath</sort-title>
+        <title>Shortness of Breath</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">31</id>
+        <slug>syncope</slug>
+        <sort-title>Syncope</sort-title>
+        <title>Syncope</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+      <article>
+        <body>1. Assess need for **resuscitation**
+2. Speculum examination to **remove products of conception** as necessary
+3. Urgent investigations:
+    * Quantitative βhCG
+    * FBC
+    * Gynaecologist consult
+    * Pelvic ultrasound
+    * Consider surgical intervention
+
+Once stable...
+
+4. Complete history and examination
+5. **Serial βhCG** to monitor progression
+6. Transvaginal U/S to **confirm pregnancy location**
+7. Continued management down one pathway:
+    * Ectopic pregnancy
+    * Stable non-viable pregnancy
+    * Viable pregnancy</body>
+        <chapter-id type="integer">4</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:47Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">false</empty>
+        <id type="integer">32</id>
+        <slug>threatened-miscarriage</slug>
+        <sort-title>Threatened Miscarriage</sort-title>
+        <title>Threatened Miscarriage</title>
+        <updated-at type="datetime">2012-08-25T21:44:47Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+    <id type="integer">5</id>
+    <slug>common-investigations</slug>
+    <sort-order type="integer">5</sort-order>
+    <title>Common Investigations</title>
+    <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+    <articles type="array">
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">33</id>
+        <slug>arterial-blood-gases</slug>
+        <sort-title>Arterial Blood Gases</sort-title>
+        <title>Arterial Blood Gases</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">34</id>
+        <slug>ecg</slug>
+        <sort-title>ECG</sort-title>
+        <title>ECG</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">35</id>
+        <slug>hyperkalemia</slug>
+        <sort-title>Hyperkalemia</sort-title>
+        <title>Hyperkalemia</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">36</id>
+        <slug>hypokalemia</slug>
+        <sort-title>Hypokalemia</sort-title>
+        <title>Hypokalemia</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">37</id>
+        <slug>lumbar-puncture-lp</slug>
+        <sort-title>Lumbar Puncture (LP)</sort-title>
+        <title>Lumbar Puncture (LP)</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">38</id>
+        <slug>metabolic-acidosis</slug>
+        <sort-title>Metabolic Acidosis</sort-title>
+        <title>Metabolic Acidosis</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">5</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">39</id>
+        <slug>metabolic-alkalosis</slug>
+        <sort-title>Metabolic Alkalosis</sort-title>
+        <title>Metabolic Alkalosis</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+  <chapter>
+    <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+    <id type="integer">6</id>
+    <slug>procedures</slug>
+    <sort-order type="integer">6</sort-order>
+    <title>Procedures</title>
+    <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+    <articles type="array">
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">40</id>
+        <slug>arterial-puncture</slug>
+        <sort-title>Arterial Puncture</sort-title>
+        <title>Arterial Puncture</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">41</id>
+        <slug>blood-cultures</slug>
+        <sort-title>Blood Cultures</sort-title>
+        <title>Blood Cultures</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">42</id>
+        <slug>cardioversion</slug>
+        <sort-title>Cardioversion</sort-title>
+        <title>Cardioversion</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">43</id>
+        <slug>cricothyrotomy</slug>
+        <sort-title>Cricothyrotomy</sort-title>
+        <title>Cricothyrotomy</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">44</id>
+        <slug>defibrillation</slug>
+        <sort-title>Defibrillation</sort-title>
+        <title>Defibrillation</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">45</id>
+        <slug>digital-nerve-block-ring-block</slug>
+        <sort-title>Digital Nerve Block (Ring Block)</sort-title>
+        <title>Digital Nerve Block (Ring Block)</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">46</id>
+        <slug>endotracheal-intubation</slug>
+        <sort-title>Endotracheal Intubation</sort-title>
+        <title>Endotracheal Intubation</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">47</id>
+        <slug>indwelling-catheter-idc-insertion</slug>
+        <sort-title>Indwelling Catheter (IDC) Insertion</sort-title>
+        <title>Indwelling Catheter (IDC) Insertion</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">48</id>
+        <slug>intercostal-catheter-icc-insertion</slug>
+        <sort-title>Intercostal Catheter (ICC) Insertion</sort-title>
+        <title>Intercostal Catheter (ICC) Insertion</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">49</id>
+        <slug>intraosseous-io-cannulation</slug>
+        <sort-title>Intraosseous (IO) Cannulation</sort-title>
+        <title>Intraosseous (IO) Cannulation</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">50</id>
+        <slug>joint-aspiration</slug>
+        <sort-title>Joint Aspiration</sort-title>
+        <title>Joint Aspiration</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">51</id>
+        <slug>lumbar-puncture-lp</slug>
+        <sort-title>Lumbar Puncture (LP)</sort-title>
+        <title>Lumbar Puncture (LP)</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">52</id>
+        <slug>nasogastric-ng-tube-insertion</slug>
+        <sort-title>Nasogastric (NG) Tube Insertion</sort-title>
+        <title>Nasogastric (NG) Tube Insertion</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">53</id>
+        <slug>paracentesis</slug>
+        <sort-title>Paracentesis</sort-title>
+        <title>Paracentesis</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+      <article>
+        <body></body>
+        <chapter-id type="integer">6</chapter-id>
+        <created-at type="datetime">2012-08-25T21:44:48Z</created-at>
+        <deleted type="boolean">false</deleted>
+        <empty type="boolean">true</empty>
+        <id type="integer">54</id>
+        <slug>rapid-sequence-induction-rsi</slug>
+        <sort-title>Rapid Sequence Induction (RSI)</sort-title>
+        <title>Rapid Sequence Induction (RSI)</title>
+        <updated-at type="datetime">2012-08-25T21:44:48Z</updated-at>
+      </article>
+    </articles>
+  </chapter>
+</chapters>

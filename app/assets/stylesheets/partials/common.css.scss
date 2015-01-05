@@ -1,0 +1,446 @@
+@import 'mixins';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #eee inline-image('bg.png');
+	color: $text;
+	@include regular-font;
+	font-size: 16px;
+	line-height: 1.8em;
+	&.no-fontsmoothing {
+		p, ul li, h1, h2, h3, h4, h5, h6, a, div {
+			font-family: Arial !important;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $highlight;
+	&:hover, &:active {
+		color: darken($highlight, 30%);
+	}
+	&.non-existent {
+		color: lighten(#ff4529, 10%);
+	}
+	[class^="icon-"], [class*=" icon-"] {
+		color: #000;
+		font-size: 0.9em;
+	}
+}
+
+strong, b, h1, h2, h3, h4, h5, h6 { @include heavy-font; }
+em, i { @include italic-font; }
+strong em, em strong { @include heavy-italic-font; }
+header { display: block; @include heavy-font; }
+
+input[type=submit] {
+	margin: 1em 0 10px 0;
+	padding: 10px 14px 7px 14px;
+	display: inline-block;
+	font-size: 0.9em;
+	line-height: 1.0em;
+	border: 0;
+	color: #fff;
+	@include regular-font;
+	text-transform: uppercase;
+	@include border-radius(5px);
+	@include background($highlight linear-gradient(lighten($highlight, 5%), $highlight, darken($highlight, 5%)));
+	@include box-shadow(1px 1px 3px rgba(0,0,0,0.3));
+	&:hover, &:active {
+		@include background($highlight linear-gradient(darken($highlight, 5%), $highlight, lighten($highlight, 5%)));
+		@include box-shadow(inset 1px 1px 3px rgba(0,0,0,0.3));
+	}
+}
+
+/**** Header. ****/
+
+#header-container {
+	background: transparent inline-image('header_bg.png') top center repeat-x;
+}
+
+#header {
+	position: relative;
+	// Need z-index as we use a -2px margin on wrapper.
+	z-index: 1000;
+	margin: 0 auto;
+	padding: 0;
+	height: 40px;
+	width: 1024px;
+	color: #fff;
+	h1 {
+		display: block;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+		width: 1024px;
+		height: 40px;
+		background: transparent inline-image('header.png') top left no-repeat;
+		a {
+			text-indent: -9999px;
+			display: block;
+			margin: 0;
+			padding: 0;
+			width: 1024px;
+			height: 40px;
+		}
+	}
+	.rep-tag-header {
+		z-index: 1000;
+		position: absolute;
+		top: 2px;
+		// right: 245px;
+		right: 60px;
+		cursor: pointer;
+		.rep-tag, .rep-tag a {
+			color: #fff;
+			font-size: 13px;
+		}
+		.buttons {
+			z-index: -1;
+			display: none;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			padding-top: 35px;
+			background: #eee;
+			@include border-radius(6px);
+			width: 100%;
+			a {
+				display: block;
+				font-size: 11px;
+				line-height: 12px;
+				@include heavy-font;
+				text-transform: uppercase;
+				color: #999;
+				text-align: right;
+				padding: 5px 8px;
+				&:hover {
+					color: #000;
+					background: transparentize($highlight, 0.2);
+				}
+				&:last-of-type {
+					@include border-bottom-left-radius(6px);
+					@include border-bottom-right-radius(6px);
+				}
+			}
+		}
+		&:hover {
+			.buttons { display: block; }
+			.rep-tag, .rep-tag a {
+				color: #000;
+			}
+		}
+	}
+	.public-links {
+		position: absolute;
+		top: 0px;
+		left: 175px;
+		// Shouldn't need a width, but we do in Webkit for some reason, otherwise it line breaks.
+		width: 160px;
+		color: $highlight;
+		a {
+			display: inline-block;
+			height: 39px;
+			line-height: 40px;
+			padding: 0 10px;
+			font-size: 15px;
+			color: #fff;
+			&.green {
+				color: #A2FF11;
+			}
+			text-transform: lowercase;
+		}
+
+	}
+
+	.twi-logo {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 60px;
+		a {
+			display: block;
+			height: 39px;
+			text-indent: -9999px;
+		}
+	}
+}
+
+#sub-header {
+	display: none;
+	position: absolute;
+	z-index: 1001;
+	margin: 0 auto;
+	padding: 0;
+	height: $sub-header-height;
+	width: 100%;
+	color: #fff;
+	// background: $lmblue;
+	// background: transparentize($lmblue, 0.9);
+	// background: #eee;
+	background: transparentize(darken($highlight, 0%), 0.2);
+	h1 {
+		display: block;
+		text-align: left;
+		margin: 0 auto;
+		padding: 0;
+		width: 942px;
+		height: $sub-header-height;
+		@include italic-font;
+		font-size: 13px;
+		line-height: $sub-header-height;
+		text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+	}
+}
+
+.not-signed-in.articles.index #sub-header {
+	display: block;
+}
+
+#wrapper {
+	margin: -2px auto 0 auto;
+	width: 1024px;
+	color: $text;
+	@include box-shadow(1px 1px 7px rgba(0, 0, 0, 0.4));
+	@include border-bottom-left-radius(7px);
+	@include border-bottom-right-radius(7px);
+}
+
+#footer-container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 0 50px 0;
+	clear: both;
+
+	#footer {
+		display: table;
+		width: 1024px - 40px; /* A bit smaller for some artificial margin. */
+		margin: 0 auto;
+		.row {
+			display: table-row;
+			width: 960px;
+			.cell {
+				display: table-cell;
+				padding: 0 15px;
+				text-transform: lowercase;
+				color: #999;
+				font-size: 14px;
+				line-height: 20px;
+				h2 {
+					font-size: 14px;
+					display: block;
+					color: #777;
+					margin: 5px 0;
+					padding: 0;
+				}
+				a {
+					color: #666;
+					display: block;
+				}
+				&.left {
+					a {
+						// @include heavy-font;
+					}
+				}
+				.instigators {
+					a {
+						display: inline-block;
+						color: #666;
+					}
+					.logo {
+						float: left;
+						display: block;
+						margin-top: 7px;
+						width: 140px;
+						height: 23px;
+						text-indent: -9999px;
+						background: inline-image('footer_logo.png');
+					}
+				}
+				.social {
+					clear: both;
+					display: block;
+					margin: 0;
+					padding: 0;
+					line-height: 1.0em;
+					.each {
+						position: relative;
+						width: 80px;
+						display: inline-block;
+						margin: 10px 10px 10px 0;
+						& > div, & > iframe {
+							position: absolute;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Growl-like notifications. */
+
+.growl {
+	z-index: 10000;
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	margin: 0;
+	padding: 0;
+	background: #333;
+	// opacity: 0.95;
+	color: #fff;
+	text-shadow: 1px 1px 1px transparentize(#000, 0.3);
+	@include heavy-font;
+	@include background-clip(padding-box);
+	font-size: 20px;
+	line-height: 40px;
+	height: 40px;
+	div {
+		padding: 0;
+		text-align: center;
+	}
+	&.alert {
+		background: #ff0055;
+		// @include background(#ff0055 linear-gradient(lighten(#ff0055, 5%), #ff0055, darken(#ff0055, 5%)));
+	}
+	&.notice {
+		background: $highlight;
+		// @include background($highlight linear-gradient(lighten($highlight, 5%), $highlight, darken($highlight, 5%)));
+	}
+	a {
+		color: #000;
+		text-decoration: underline;
+	}
+}
+
+/**** Rep Tag. ****/
+
+.rep-tag {
+
+	display: inline-block;
+	position: relative;
+	text-shadow: none;
+	@include heavy-font;
+	color: #000;
+	line-height: 1.8em;
+	height: 1.8em;
+	padding: 0.5em;
+
+	.pic {
+		display: inline-block;
+		margin-top: -0.1em;
+		padding-bottom: 0.1em;
+		vertical-align: middle;
+	}
+
+	.name {
+		margin-left: 0.33em;
+		display: inline-block;
+		a { color: #000; }
+	}
+
+	.rep {
+		display: inline-block;
+	}
+
+	@include badge;
+	.badge {
+		margin-left: 3px;
+	}
+
+}
+
+/**** End Rep Tag. ****/
+
+/* Markdown explanation. */
+
+.markdown-box {
+	display: none;
+}
+
+.markdown-table {
+	width: 550px;
+	border-collapse: collapse;
+	line-height: 1.5em;
+	margin: 10px 10px 0 10px;
+	tr {
+		th {
+			text-align: center;
+			i {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 1.8em;
+				padding-right: 4px;
+			}
+		}
+		td {
+			vertical-align: top;
+			a {
+				display: block;
+				text-align: right;
+				font-size: 0.8em;
+			}
+			padding: 5px;
+		}
+		td:first-of-type {
+			color: #999;
+			text-align: right;
+		}
+	}
+}
+
+#facebox article header {
+	margin: 0;
+	background: transparent;
+	color: #111;
+	text-transform: none;
+	@include heavy-font;
+	padding: 0;
+}
+
+button::-moz-focus-inner { border: 0; }
+input::-moz-focus-inner { border: 0; }
+img { -ms-interpolation-mode: bicubic; }
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/**** Tipsy. ****/
+.tipsy-text { display: none; }
+
+.tipsy { padding: 5px; font-size: 15px; position: absolute; z-index: 100000; }
+	.tipsy-inner { padding: 4px 8px 5px 8px; background-color: black; color: white; max-width: 200px; text-align: center; }
+	.tipsy-inner { border-radius: 3px; -moz-border-radius:3px; -webkit-border-radius:3px; }
+	.tipsy-inner {
+		a, a:visited, a:active {
+			color: $highlight;
+			text-decoration: underline;
+			background-color: transparent;
+			padding: 0;
+			font-size: 1em;
+		}
+	}
+	.tipsy-arrow { position: absolute; background: url('data:image/gif;base64,R0lGODlhCQAJAIABAAAAAAAAACH5BAEAAAEALAAAAAAJAAkAAAIRjAOnwIrcDJxvwkplPtchVQAAOw==') no-repeat top left; width: 9px; height: 5px; }
+	.tipsy-n .tipsy-arrow { top: 0; left: 50%; margin-left: -4px; }
+		.tipsy-nw .tipsy-arrow { top: 0; left: 10px; }
+		.tipsy-ne .tipsy-arrow { top: 0; right: 10px; }
+	.tipsy-s .tipsy-arrow { bottom: 0; left: 50%; margin-left: -4px; background-position: bottom left; }
+		.tipsy-sw .tipsy-arrow { bottom: 0; left: 10px; background-position: bottom left; }
+		.tipsy-se .tipsy-arrow { bottom: 0; right: 10px; background-position: bottom left; }
+	.tipsy-e .tipsy-arrow { top: 50%; margin-top: -4px; right: 0; width: 5px; height: 9px; background-position: top right; }
+	.tipsy-w .tipsy-arrow { top: 50%; margin-top: -4px; left: 0; width: 5px; height: 9px; }
+
+/* Customized. */
+.tipsy .tipsy-inner {
+	line-height: 1.3em;
+	font-size: 14px;
+	// padding-top: 6px;
+}

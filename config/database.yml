@@ -1,0 +1,21 @@
+development:
+    adapter: postgresql
+    encoding: unicode
+    database: oca
+    username: oca
+    pool: 5
+
+test:
+    adapter: postgresql
+    encoding: unicode
+    database: oca_test
+    username: oca
+    pool: 5
+
+production:
+    adapter: postgresql
+    host: /var/run/postgresql
+    encoding: unicode
+    database: oca
+    username: oca
+    pool: 5

@@ -1,0 +1,30 @@
+<article id="toc">
+	<% @chapters.each do |c| %>
+		<table class="toc">
+			<tr>
+				<th colspan="3"><%= c.title %></th>
+			</tr>
+			<% c.articles.in_groups_of(3) do |row| %>
+			<tr>
+				<% row.each do |article| %>
+				<td><%= article.nil? ? '' : link_to(article.title, slug_path(:chapter_slug => c.slug, :slug => article.slug), :class => (article.body.empty? ? 'empty' : '')) %></td>
+				<% end %>
+			</tr>
+			<% end %>
+		</table>
+	<% end %>
+	<%= link_to('Suggest a New Topic!', 'mailto:article-suggestions@thewellinspired.com', :class => 'action-link') if cannot?(:create, Article.new) %>
+	<%= link_to('new article', new_article_path, :class => 'action-link') if can?(:create, Article.new) %>
+	<div class="ios-ad">
+		Get it on your iPhone or iPad.
+	</div>
+	<script type="text/javascript">
+	OCA.queue.wait(function() {
+		$(function() {
+			$('.ios-ad').click(function() {
+				location.href = '<%= ios_path %>';
+			});
+		})
+	});
+	</script>
+</article>

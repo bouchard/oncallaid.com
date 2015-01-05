@@ -1,0 +1,24 @@
+<article id="contributors">
+
+	<header>
+		Contributors
+	</header>
+
+	<p>OnCallAid is a collaborative effort &mdash; find an article to contribute to and we'll list your name here.</p>
+
+	<ul>
+	<% User.all_users_with_contribution_counts.each do |u| %>
+		<li class="clearfix">
+			<%= image_tag(u.gravatar_url(:size => 160), :width => 80, :height => 80) %><span class="title"><%= u.profile.title if u.profile %> </span><span class="name"><%= u.profile ? u.profile.name : 'Anonymous' %></span><span class="postnominals"><%= u.profile.postnominals if u.profile %></span>
+			<div class="contributions">
+				Contributions: <span class="word-total"><%= u.word_count.to_i %></span> words to <span class="article-total"><%= u.article_count.to_i %></span> articles
+				<% if u.articles_by_impact %>
+					(highest impact: <%= raw(u.articles_by_impact[0..1].map{ |a| link_to(a.title, slug_path(:slug => a.slug, :chapter_slug => a.chapter.slug )) }.join(', ')) %>)
+				<% end %>
+			</div>
+			<div class="description"><%= u.profile ? u.profile.description : '' %></div>
+		</li>
+	<% end %>
+	</ul>
+
+</article>

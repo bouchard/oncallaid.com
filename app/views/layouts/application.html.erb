@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= page_title %></title>
+
+		<link rel="shortcut icon" type="image/png" href="<%= image_path('favicon.png') %>">
+		<meta name="viewport" content="width=1024,user-scalable=yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-itunes-app" content="app-id=552411551">
+		<%= csrf_meta_tags %>
+
+		<%= stylesheet_link_tag :application, :media => :all %>
+		<%= javascript_include_tag :lab %>
+		<script type="text/javascript">
+		window.OCA || (window.OCA = {});
+		OCA.queue = $LAB.script('//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js').wait().script('<%= javascript_path(:application) %>');
+		OCA.userId = <%= current_user.id || 'null' %>;
+		</script>
+
+		<!--[if lt IE 9]>
+			<%= javascript_include_tag :html5shiv %>
+		<![endif]-->
+
+		<%= google %>
+
+		<%= content_for(:head) %>
+	</head>
+<body class="<%= [ controller.controller_name, controller.action_name, (current_user.persisted? ? 'signed-in' : 'not-signed-in') ].join(' ') %>">
+
+	<%= render :partial => 'header' %>
+	<%= render :partial => 'notices' %>
+
+	<div id="wrapper">
+		<%= yield %>
+	</div>
+
+	<%= render :partial => 'footer' %>
+
+</body>
+</html>

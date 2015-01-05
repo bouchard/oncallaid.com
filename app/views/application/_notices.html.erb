@@ -1,0 +1,21 @@
+<% if alert %>
+
+	<script type="text/javascript">
+	OCA.queue.wait(function() {
+		$(function() {
+			OCA.alert('<%= escape_javascript(alert) %>');
+		})
+	});
+	</script>
+
+<% elsif notice %>
+
+	<script type="text/javascript">
+	OCA.queue.wait(function() {
+		$(function() {
+			OCA.notice('<%= escape_javascript(notice) %>');
+		})
+	});
+	</script>
+
+<% end %>

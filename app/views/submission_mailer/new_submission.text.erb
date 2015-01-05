@@ -1,0 +1,3 @@
+We've received a new submission from "<%= @submission.user.username %>" (<%= @submission.user.email %>) for article "<%= @submission.article.title %>".
+
+You can have a look at this submission here: <%= moderate_submission_url(@submission) %>.

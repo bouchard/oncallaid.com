@@ -1,0 +1,23 @@
+<div class="new submission">
+
+	<header>Editing: <%= @article.title %></header>
+
+	<p>Thanks for contributing! You can edit <strong>&ldquo;<%= @article.title %>&rdquo;</strong> below to your heart's content, and when you're done your submission will be reviewed by editorial staff before going live on the site.</p>
+
+	<% if @submission.persisted? %>
+	<p>Your current submission for this article is still pending moderation, but feel free to edit and re-submit below.</p>
+	<% elsif @submission.rejected_reason.present? %>
+	<p>Your current submission for this article has been rejected with the following explanation: "<%= @submission.rejected_reason %>". Please feel free to edit this submission, or delete it and restart from scratch &mdash; we'd love to have your contributions!</p>
+	<% end %>
+
+	<%= form_for(@submission) do |f| %>
+
+		<label for="content"><span class="markdown-explanation">(you can use <span style="border-bottom: 1px dotted #666;">Markdown</span> for formatting)</span></label>
+		<%= f.text_area :body %>
+
+		<%= f.submit "Fire away!" %>
+		<%= link_to('Delete this submission', submission_path(@submission), :method => :delete) if @submission.persisted? %>
+	<% end %>
+
+	<%= render :partial => 'helpbox' %>
+</div>
