@@ -6,11 +6,11 @@ class User < ActiveRecord::Base
 
   serialize :roles, Array
 
-  scope :admin, where(%|roles LIKE '%admin%'|)
-  scope :moderator, where(%|roles LIKE '%moderator%' OR roles LIKE '%admin%'|)
-  scope :not_admin, where(%|roles NOT LIKE '%admin%'|)
+  scope :admin, -> { where(%|roles LIKE '%admin%'|) }
+  scope :moderator, -> { where(%|roles LIKE '%moderator%' OR roles LIKE '%admin%'|) }
+  scope :not_admin, -> { where(%|roles NOT LIKE '%admin%'|) }
   scope :recent, ->(ago = 18.hours.ago) { where('created_at > ?', ago) }
-  scope :blank_email, where(:email => nil)
+  scope :blank_email, -> { where(:email => nil) }
 
   after_initialize :belongs_to_at_least_one_role
   validate :belongs_to_at_least_one_role

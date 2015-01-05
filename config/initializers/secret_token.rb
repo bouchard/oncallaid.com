@@ -1,1 +1,0 @@
-OnCallAid::Application.config.secret_token = ENV['SESSION_TOKEN']
