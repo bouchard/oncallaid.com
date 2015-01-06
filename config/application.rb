@@ -1,5 +1,5 @@
 require File.expand_path('../boot', __FILE__)
-require File.expand_path('../../lib/load_environment_variables', __FILE__)
+require File.expand_path('../lib/load_environment_variables', File.dirname(__FILE__))
 require 'rails/all'
 
 if defined?(Bundler)

@@ -61,6 +61,7 @@
 Backup::Model.new(:oca, 'Backup the OCA database.') do
 
   require 'yaml'
+  require File.expand_path('../lib/load_environment_variables', File.dirname(__FILE__))
 
   db = YAML.load_file(File.expand_path('../config/database.yml', File.dirname(__FILE__)))
 
