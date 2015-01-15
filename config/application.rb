@@ -62,7 +62,7 @@ module OnCallAid
     config.assets.js_compressor = Uglifier.new(:copyright => false) if defined?(Uglifier)
 
     # For serving files via Nginx. Not needed at the moment.
-    config.action_dispatch.x_sendfile_header = "X-Accel-Redirect"
+    # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect"
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
