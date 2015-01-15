@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   layout :set_layout
 
   def current_user
+    session[:user_id] = User.first.id if Rails.env.development?
     User.where(:id => session[:user_id]).first || User.new(:username => 'Guest')
   end
 

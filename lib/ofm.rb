@@ -14,8 +14,7 @@ module OCAMarkdown
 
   class Helper
     include Singleton
-    include ActionView::Helpers::TagHelper
-    include ActionView::Helpers::TextHelper
+    # include ActionView::Helpers::SanitizeHelper
     include ActionView::Helpers::UrlHelper
   end
 
@@ -78,7 +77,8 @@ module OCAMarkdown
       text.gsub!(/<([^[[:alpha:]]"'\/])/, '&lt;\1')
       text.gsub!(/([^[[:alpha:]]"'\n\s])>/, '\1&gt;')
 
-      text = help.sanitize(text, :tags => options[:allowed_tags])
+      # We can't sanitize anymore. The Rails 4.2 helper takes out our single angle brackets, which we otherwise want to keep...
+      # text = help.sanitize(text, :tags => options[:allowed_tags])
 
       # Process internal links.
       text.gsub!(/\[\[.+?\]\]/) do |x|
